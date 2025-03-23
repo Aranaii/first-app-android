@@ -9,14 +9,14 @@ import javafx.stage.Stage
 
 class MainApp : Application() {
     override fun start(primaryStage: Stage) {
-        val nameLabel = Label("Name: John Doe")
-        val ageLabel = Label("Age: 25")
-        val hobbyLabel = Label("Hobby: Photography")
+        val nameLabel = Label("Имя: Авдюхина Екатерина")
+        val ageLabel = Label("Возраст: 21")
+        val hobbyLabel = Label("Профессия: Аналитик")
 
         val vbox = VBox(10.0, nameLabel, ageLabel, hobbyLabel)
         val scene = Scene(vbox, 300.0, 200.0)
 
-        primaryStage.title = "About You"
+        primaryStage.title = "Обо мне:"
         primaryStage.scene = scene
         primaryStage.show()
     }
