@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.1.10"
+    id("org.openjfx.javafxplugin") version "0.0.8"
 }
 
 group = "org.example"
@@ -10,7 +11,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    implementation(kotlin("stdlib"))
+}
+
+javafx {
+    version = "17"
+    modules("javafx.controls", "javafx.fxml")
 }
 
 tasks.test {
